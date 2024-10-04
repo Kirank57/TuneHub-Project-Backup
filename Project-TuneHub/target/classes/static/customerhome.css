@@ -1,0 +1,102 @@
+body {
+  font-family: "Roboto";
+  margin: 2px 10px 0 10px;
+}
+
+.navbar {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 5px;
+  color: white;
+}
+
+.list > a {
+  display: inline-block;
+  margin: 18px;
+  color: white;
+}
+
+#btn1,#btn2 {
+  border-radius: 3px;
+  width: 300px;
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin-top:10px;
+}
+
+.footer > p {
+  margin: 18px;
+  color: white;
+}
+
+#btn1,#btn2 {
+  margin-top: 10px;
+}
+
+.reasons-to-join {
+  border-radius:5px;
+  margin: 10px 2px;
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+}
+
+.reasons-to-join h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap:20px;
+}
+
+.card {
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+}
+
+.card img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.card p {
+  font-size: 0.9em;
+  color: white;
+}
+
+.container{
+	display:flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	width:500px;
+	gap:10px;
+	height:530px;
+}
+
+.container > form{
+	text-align: center;
+}
+

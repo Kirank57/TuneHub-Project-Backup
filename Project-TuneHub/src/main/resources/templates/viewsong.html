@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index Page</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link th:href="@{/viewsong.css}" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="list">
+        <a>About</a>
+        <a>Contact</a>
+        <a href="index">Home</a>
+      </div>
+    </nav>
+    <section class="reasons-to-join">
+      <div class="cards-container">
+        <div class="card" th:each="song :${song}">
+          <img src="tv-icon.png" alt="TV Icon" />
+          <h3 th:text="${song.name}"></h3>
+          <p th:text="${song.genre}"></p>
+          <h3 th:text="${song.artist}"></h3>
+          <audio
+            id="audio-element"
+            style="width: 200px; margin-top: 5px"
+            controls
+          >
+            <source th:src="${song.link}" type="audio/mpeg" /></audio
+          ><br />
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <p>Developed By Kiran</p>
+      </div>
+    </footer>
+  </body>
+</html>

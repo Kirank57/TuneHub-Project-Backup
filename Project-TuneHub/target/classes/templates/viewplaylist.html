@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playlist Table</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .table-container {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container table-container">
+      <h2 class="text-center mb-4">Playlist Table</h2>
+
+      <!-- Responsive Table -->
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Playlist ID</th>
+              <th scope="col">Playlist Name</th>
+              <th scope="col">Songs</th>
+              <th scope="col">Play</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr th:each="playlist:${allplaylist}">
+              <td th:text="${playlist.id}"></td>
+              <td th:text="${playlist.name}">PlayList Name</td>
+              <td>
+                <ul th:each="song:${playlist.songs}">
+                  <li th:text="${song.name}"></li>
+                </ul>
+              </td>
+              <td>
+              <div th:each="song:${playlist.songs}">
+                <audio th:src="${song.link}" controls></audio>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

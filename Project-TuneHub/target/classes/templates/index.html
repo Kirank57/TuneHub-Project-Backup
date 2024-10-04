@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index Page</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link th:href="@{/index.css}" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="list">
+        <a>About</a>
+        <a>Contact</a>
+        <a>Home</a>
+        <a  href="login"><button type="button" class="btn btn-outline-light">Login</button></a>
+        <a  href="registration"><button type="button" class="btn btn-outline-light">Register</button></a>
+      </div>
+    </nav>
+    <section>
+      <div class="content"></div>
+    </section>
+    <footer>
+      <div class="footer">
+        <p>Developed By Kiran</p>
+      </div>
+    </footer>
+  </body>
+</html>

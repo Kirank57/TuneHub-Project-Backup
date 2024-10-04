@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index Page</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link th:href="@{/adminhome.css}" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="list">
+        <a th:text="${user.username}"></a>
+        <a>About</a>
+        <a>Contact</a>
+        <a href="index">Home</a>
+        <a href="logout"><button type="button" class="btn btn-outline-light">Logout</button></a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="content">
+           <form action="newsong">
+          <button type="submit" class="btn btn-primary me-2" id="btn1">Add Songs</button>
+        </form>
+        <br />
+        <form action="viewsongs">
+          <button type="submit" class="btn btn-primary me-2" id="btn1">View Songs</button>
+        </form>
+         <br />
+          <form action="createplaylist">
+          <button type="submit" class="btn btn-primary me-2" id="btn1">Create Playlist</button>
+        </form> <br />
+         <form action="viewplaylist">
+          <button type="submit" class="btn btn-primary me-2" id="btn1">View Playlist</button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <p>Developed By Kiran</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+</html>
