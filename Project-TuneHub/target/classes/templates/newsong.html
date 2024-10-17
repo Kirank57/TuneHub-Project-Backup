@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Music Form</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Music Submission Form</h2>
+        <form action="addsong" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter song name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="artist">Artist</label>
+                <input type="text" class="form-control" id="artist" placeholder="Enter artist name" name="artist" required>
+            </div>
+            <div class="form-group">
+                <label for="genre">Genre</label>
+                <input type="text" class="form-control" id="genre" placeholder="Enter genre" name="genre" required>
+            </div>
+            <div class="form-group">
+                <label for="link">Link</label>
+                <input type="url" class="form-control" id="link" placeholder="Enter song link" name="link" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

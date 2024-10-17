@@ -1,0 +1,23 @@
+body {
+  background-image: url("/images/music1.jpg");
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+  font-family: "Roboto";
+  font-weight: 400;
+}
+.login-container {
+  border: 2px solid white;
+  color: white;
+  width: 580px;
+  height: 500px;
+  margin: 100px auto;
+  padding: 50px;
+  background: transparent;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form > div {
+  margin: 45px;
+}
